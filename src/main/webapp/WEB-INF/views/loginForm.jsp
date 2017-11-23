@@ -23,6 +23,9 @@
     <br><br>
     <p><font color="red">${errormsg}</font></p>
 
+    <br><br>
+    <a href="/">Go back to homepage</a>
+
 </form>
 
 </body>

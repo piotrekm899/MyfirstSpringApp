@@ -12,7 +12,7 @@
 </head>
 <body>
 
-Welcome ${login}<br>
+Welcome ${login}<br><br>
 Please see the table with cars below:<br><br><br>
 
 <table style="width:100%" align="center">
@@ -43,6 +43,9 @@ Please see the table with cars below:<br><br><br>
         <td>${sadVolksSong}</td>
     </tr>
 </table>
+
+<br><br>
+<a href="/">Go back to homepage</a>
 
 </body>
 </html>
