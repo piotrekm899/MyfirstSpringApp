@@ -9,33 +9,53 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
 <head>
-    <title>Surveyt</title>
+    <title>Survey</title>
+
+    <style>
+        .errors {color: red}
+    </style>
+
 </head>
 <body>
 
 Please complete the survey and hit submit button.
+* means that the field is required.
 
 <br><br>
 
  <form:form action="processForm" modelAttribute="respondent">
 
-    First Name:
+    First Name*:
 
      <br>
     
         <form:input path="name"/>
+        <form:errors path="name" cssClass="errors"/>
 
      <br><br>
 
-    Last Name:
+    Last Name*:
 
     <br>
 
      <form:input path="lastName"/>
+     <form:errors path="lastName" cssClass="errors"/>
 
      <br><br>
 
-    Country:
+     Age: <br>
+     <form:input path="age"/>
+     <form:errors path="age" cssClass="errors"/>
+
+     <br><br>
+
+     Postal Code: <br>
+     <form:input path="postalCode" placeholder="XX-XXX"/>
+         <form:errors path="postalCode" cssClass="errors"/>
+
+     <br><br>
+
+     Country:
 
     <br>
 
@@ -53,6 +73,13 @@ Please complete the survey and hit submit button.
      No <form:radiobutton path="drivingLicence" value="No"/>
      
     <br><br>
+
+     What are your car's plates? <br>
+
+     <form:input path="carPlates" placeholder ="must start with KR"/>
+     <form:errors path="carPlates" cssClass="errors"/>
+
+     <br><br>
 
     Favourite car(s) (multiple choice):
 

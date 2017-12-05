@@ -19,7 +19,6 @@ Please log in to see the cars or please take a quick survey to help me improve m
 <hr><a href="login"> Go to login page </a>
 <hr><a href="survey"> Take a survey </a>
 
-
 </body>
 
 </html>

@@ -20,7 +20,10 @@ Please find the details you entered below:<br><br>
 
 First name: ${respondent.name}<br>
 Last name: ${respondent.lastName}<br>
+Age: ${respondent.age}<br>
+Postal Code: ${respondent.postalCode}<br>
 Country: ${respondent.countryFile}<br>
+Car Plates: ${respondent.carPlates}<br>
 Driving license: ${respondent.drivingLicence}<br>
 Favourite car(s):
 <ul>
